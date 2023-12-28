@@ -132,7 +132,6 @@ export default function StuEnrolmentpageBox() {
       <br />
       <br />
       <br />
-      <StudentMypageTimetable data={resData}></StudentMypageTimetable>
     </>
   );
 }

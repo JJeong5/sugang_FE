@@ -19,7 +19,7 @@ function Copyright(props) {
       align="center"
       {...props}
     >
-      {"Produce404© "}
+      {"RECA 4th - Group 1 © "}
       <Link color="inherit" href="../">
         모두의 수강신청
       </Link>{" "}
@@ -104,18 +104,6 @@ function SignIn() {
         component="form"
         onSubmit={handleSubmit}
       >
-        <FormControlLabel
-          control={
-            <Checkbox
-              value={isManager}
-              name="LogIn_CheckBox"
-              id="checkbox"
-              color="primary"
-              onChange={handleManager}
-            />
-          }
-          label="manager"
-        />
         <TextField
           margin="normal"
           required
