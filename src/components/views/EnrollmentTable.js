@@ -94,7 +94,7 @@ export default function BasketTable({ columns, data }) {
     if (open) {
       handleOpen();
     }
-  }, [open]);
+  }, [open, selectedSubjects]);
 
   const handleYes = () => {
     console.log("Selected Subjects:", selectedSubjects);
@@ -125,7 +125,10 @@ export default function BasketTable({ columns, data }) {
 
           setEnrollmentData((prevEnrollmentData) => [
             ...prevEnrollmentData.slice(0, subjectIndex),
-            { ...prevEnrollmentData[subjectIndex], to: updatedEnrollmentData },
+            {
+              ...prevEnrollmentData[subjectIndex],
+              to: updatedEnrollmentData,
+            },
             ...prevEnrollmentData.slice(subjectIndex + 1),
           ]);
 
@@ -136,7 +139,6 @@ export default function BasketTable({ columns, data }) {
           setSnackbarMessage("신청에 성공했습니다.");
         }
       }
-
       handleClose();
     }
   };

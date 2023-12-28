@@ -53,7 +53,7 @@ export const enrollmentDataState = atom({
       professor: "김아욱",
       classroom: 1,
       score: 3,
-      to: 25,
+      to: 19,
       totalSeats: 25,
     },
     {
@@ -65,7 +65,7 @@ export const enrollmentDataState = atom({
       professor: "정충교",
       classroom: 1,
       score: 3,
-      to: 5,
+      to: 30,
       totalSeats: 30,
     },
   ],
