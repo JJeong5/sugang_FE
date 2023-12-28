@@ -1,0 +1,77 @@
+.top_bar{   
+    text-align: center;
+}
+.title {   
+    display: inline-block;
+
+}
+.bar_options {  
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+    
+}
+.bar_options .User {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Logout{
+    float: right;
+    margin-left: 10px; 
+    margin-top: 30px; 
+    
+}
+
+.Logout_button{
+    height: 35px;
+    background-color: #3b18da;
+    border: none;
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Message{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Home{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.Input_period{
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.Period_title{
+    display: inline-block;
+    margin-left: 20px;
+}
+.Period_start{
+    display: inline-block;
+    margin-left: 30px;
+}
+.Period_blank{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.Period_end{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+.Period_submit{
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
