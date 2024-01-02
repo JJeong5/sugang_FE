@@ -3,7 +3,7 @@ import * as BsIcons from "react-icons/bs";
 export const SidebarData = [
   {
     title: "Home",
-    path: "/",
+    path: "/student",
     icon: <BsIcons.BsFillHouseDoorFill />,
     cName: "nav-text",
   },
@@ -14,7 +14,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "My Page/신청결과",
+    title: "MyPage/신청결과",
     path: "/student/mypage",
     icon: <BsIcons.BsFillBookFill />,
     cName: "nav-text",

@@ -29,7 +29,7 @@ function StudentMyPage() {
           <div class="Home">
             <AiTwotoneHome
               size={35}
-              onClick={() => (window.location.href = "../")}
+              onClick={() => (window.location.href = "/student")}
             />
           </div>
         </div>
