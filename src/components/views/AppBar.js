@@ -38,7 +38,7 @@ function AppAppBar() {
             href="/"
             sx={{ fontSize: 24 }}
           >
-            {"에티버스의 수강신청"}
+            {"에티버스 수강신청"}
           </Link>
         </Toolbar>
       </AppBar>

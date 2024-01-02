@@ -21,7 +21,7 @@ function Copyright(props) {
     >
       {"RECA 4th - Group 1 © "}
       <Link color="inherit" href="../">
-        에티버스의 수강신청
+        에티버스 수강신청
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
