@@ -35,30 +35,46 @@ export default function AppFooter() {
           {/*  원래 있던 footer  */}
           <Grid item>
             <Typography variant="caption">
-              {"Icons made by "}
+              {"팀장: "}
               <Link
                 href="https://www.freepik.com"
                 rel="sponsored"
-                title="Freepik"
+                title="성시민"
               >
-                Freepik
+                성시민
               </Link>
-              {" from "}
+              {" / "}
+              {"팀원: "}
+              <Link
+                href="https://www.freepik.com"
+                rel="sponsored"
+                title="강가희"
+              >
+                강가희
+              </Link>
+              {", "}
               <Link
                 href="https://www.flaticon.com"
                 rel="sponsored"
-                title="Flaticon"
+                title="김주윤"
               >
-                www.flaticon.com
+                김주윤
               </Link>
-              {" is licensed by "}
+              {", "}
               <Link
-                href="https://creativecommons.org/licenses/by/3.0/"
-                title="Creative Commons BY 3.0"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://github.com/JJeong5"
+                rel="sponsored"
+                title="오정호"
               >
-                CC 3.0 BY
+                오정호
+              </Link>
+              {", "}
+              <Link
+                href="https://www.flaticon.com"
+                rel="sponsored"
+                title="홍경래"
+              >
+                홍경래
               </Link>
             </Typography>
           </Grid>

@@ -52,7 +52,7 @@ export default function MainpageBox() {
         alt="increase priority"
       />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        모두의 수강신청
+        에티버스의 수강신청
       </Typography>
       <Typography
         color="inherit"
