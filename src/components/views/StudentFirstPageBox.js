@@ -24,6 +24,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
   padding: 0,
   borderRadius: 0,
   height: "50vh",
+  left: "100px",
   [theme.breakpoints.down("md")]: {
     width: "100% !important",
     height: 100,
@@ -75,7 +76,7 @@ const images = [
 export default function AppFooter() {
   return (
     <StupageBoxLayout>
-      <Container component="section" sx={{ mt: 8, mb: 4 }}>
+      <Container component="section" sx={{ mt: 8, mb: 10 }}>
         <Box sx={{ mt: 8, display: "flex", flexwrap: "wrap" }}>
           {images.map((image) => (
             <ImageIconButton
