@@ -10,10 +10,7 @@ function Copyright() {
     <React.Fragment>
       {new Date().getFullYear()}
       {" © "}
-      <Link
-        color="inherit"
-        href="https://plox.notion.site/Project-404-9daa9fa758394476aeb18de9647b9dff"
-      >
+      <Link color="inherit" href="https://etevers.com/main/main.html">
         RECA 4th - Group 1
       </Link>{" "}
     </React.Fragment>
@@ -37,7 +34,7 @@ export default function AppFooter() {
             <Typography variant="caption">
               {"팀장: "}
               <Link
-                href="https://www.freepik.com"
+                href="https://github.com/simin"
                 rel="sponsored"
                 title="성시민"
               >
@@ -46,7 +43,7 @@ export default function AppFooter() {
               {" / "}
               {"팀원: "}
               <Link
-                href="https://www.freepik.com"
+                href="https://github.com/gahee"
                 rel="sponsored"
                 title="강가희"
               >
@@ -54,7 +51,7 @@ export default function AppFooter() {
               </Link>
               {", "}
               <Link
-                href="https://www.flaticon.com"
+                href="https://github.com/Juyoon"
                 rel="sponsored"
                 title="김주윤"
               >
@@ -70,7 +67,7 @@ export default function AppFooter() {
               </Link>
               {", "}
               <Link
-                href="https://www.flaticon.com"
+                href="https://github.com/Kyeongrae"
                 rel="sponsored"
                 title="홍경래"
               >

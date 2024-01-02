@@ -26,9 +26,13 @@ function AppAppBar() {
             component="img"
             sx={{
               height: 120,
+              "&:hover": {
+                cursor: "pointer", // 마우스를 올렸을 때 포인터 모양으로 변경
+              },
             }}
             alt="Logo"
             src={LogoImage}
+            onClick={() => (window.location.href = "/")}
           />
           {/* 텍스트 배치 */}
           <Link
