@@ -6,6 +6,14 @@ env:
     AWS_ACCOUNT_ID: "194453983284"
     IMAGE_REPO_NAME: "myreca"
 phases:
+  install:
+    commands:
+      - curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+      - chmod +x ./kubectl
+      - mv ./kubectl /usr/local/bin/kubectl
+      - mkdir ~/.kube
+      - aws eks --region ap-northeast-2 update-kubeconfig --name reca-cluster
+      - kubectl get po -n kube-system
   # In the buildspec.yml or your build script
   pre_build:
     commands:
@@ -22,3 +30,5 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:FE$CODEBUILD_BUILD_NUMBER
+      - kubectl apply -f ./sugang_FE/deployment.yaml
+      - kubectl apply -f ./sugang_FE/service.yaml
