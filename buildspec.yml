@@ -13,7 +13,8 @@ phases:
       - mv ./kubectl /usr/local/bin/kubectl
       - mkdir ~/.kube
       - aws eks --region ap-northeast-2 update-kubeconfig --name reca-cluster
-      - kubectl apply -f ./rolegpt.yaml
+      - kubectl apply -f ./serviceaccount.yaml
+      - kubectl apply -f ./rolebinding.yaml
       - kubectl get po -n kube-system
   # In the buildspec.yml or your build script
   pre_build:
