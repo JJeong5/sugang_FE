@@ -17,8 +17,10 @@ hooks:
     - location: scripts/installation.sh
       timeout: 60
       runas: ec2-user
+      command: aws ssm get-parameter --name /CodeBuild/BuildNumber --query "Parameter.Value" --output text > /build_number.txt
 
   AfterInstall: # 배포를 완료한 후 실행되는 스크립트
     - location: scripts/deploy.sh
       timeout: 60
       runas: ec2-user
+      command: export BUILD_NUMBER=$(cat /build_number.txt)

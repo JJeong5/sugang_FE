@@ -1,22 +1,4 @@
 #!/bin/bash
-
-# CodeDeploy Agent 설치 스크립트
-
-# Amazon Linux 2에서 CodeDeploy Agent 설치
-sudo yum update -y
-sudo yum install -y ruby
-sudo yum install -y wget
-
-cd /home/ec2-user
-wget https://aws-codedeploy-ap-northeast-2.s3.ap-northeast-2.amazonaws.com/latest/install
-chmod +x ./install
-sudo ./install auto
-
-# CodeDeploy Agent 서비스 시작
-sudo service codedeploy-agent start
-
-#----------------------------------------
-
 # Docker 설치 스크립트
 
 # Docker 설치 (Amazon Linux 2 기준)
