@@ -9,9 +9,6 @@ phases:
   # In the buildspec.yml or your build script
   pre_build:
     commands:
-      - pwd
-      - ls
-      - sed -i 's/TAG="FE"/TAG="FE${CODEBUILD_BUILD_NUMBER}"/g' ./scripts/deploy.sh
       - echo Logging in to Amazon ECR...
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
   build:
