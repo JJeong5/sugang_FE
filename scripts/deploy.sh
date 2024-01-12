@@ -5,7 +5,7 @@ ECR_REPO="194453983284.dkr.ecr.ap-northeast-2.amazonaws.com"
 IMAGE_NAME="myreca"
 
 # 빌드 번호를 태그로 사용
-TAG="FE29"
+TAG="FE31"
 
 REGION="ap-northeast-2"
 ACCOUNT_ID="194453983284"
