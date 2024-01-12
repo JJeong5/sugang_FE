@@ -22,3 +22,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:FE$CODEBUILD_BUILD_NUMBER
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/*
