@@ -156,7 +156,7 @@ function AxiosPeriodBasket(e) {
       url: "api/manager/FormPeriod/basket",
       method: "post",
       baseURL:
-        "http://k8s-stage-game2049-bb9247bafa-1048721089.ap-northeast-2.elb.amazonaws.com:8080",
+        "http://k8s-stage-game2049-bb9247bafa-590478206.ap-northeast-2.elb.amazonaws.com:8080",
       withCredentials: true,
       data: joinData,
     })
@@ -190,7 +190,7 @@ function AxiosPeriodRegister(e) {
       url: "api/manager/FormPeriod/register",
       method: "post",
       baseURL:
-        "http://k8s-stage-game2049-bb9247bafa-1048721089.ap-northeast-2.elb.amazonaws.com:8080",
+        "http://k8s-stage-game2049-bb9247bafa-590478206.ap-northeast-2.elb.amazonaws.com:8080",
       withCredentials: true,
       data: joinData,
     })
@@ -224,7 +224,7 @@ function AxiosPeriodModify(e) {
       url: "api/manager/FormPeriod/modify",
       method: "post",
       baseURL:
-        "http://k8s-stage-game2049-bb9247bafa-1048721089.ap-northeast-2.elb.amazonaws.com:8080",
+        "http://k8s-stage-game2049-bb9247bafa-590478206.ap-northeast-2.elb.amazonaws.com:8080",
       withCredentials: true,
       data: joinData,
     })
@@ -258,7 +258,7 @@ function AxiosPeriodCancle(e) {
       url: "api/manager/FormPeriod/cancle",
       method: "post",
       baseURL:
-        "http://k8s-stage-game2049-bb9247bafa-1048721089.ap-northeast-2.elb.amazonaws.com:8080",
+        "http://k8s-stage-game2049-bb9247bafa-590478206.ap-northeast-2.elb.amazonaws.com:8080",
       withCredentials: true,
       data: joinData,
     })
