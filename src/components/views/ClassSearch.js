@@ -69,7 +69,8 @@ export default function Class() {
     await axios({
       url: "api/student/class/" + sessionStorage.getItem("univ"),
       method: "GET",
-      baseURL: "http://localhost:8080",
+      baseURL:
+        "http://k8s-stage-game2049-bb9247bafa-1048721089.ap-northeast-2.elb.amazonaws.com:8080",
       withCredentials: true.valueOf,
     })
       .then(function callback(response) {
