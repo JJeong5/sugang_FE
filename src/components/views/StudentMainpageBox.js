@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Button from "@mui/material/Button";
-import Axios from "axios";
+import axios from "axios";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Home } from "@mui/icons-material";
 import Homepage from "../Homepage";
@@ -26,15 +26,35 @@ export default function MainpageBox() {
 
   // call the list of university
   const [univ_list, setUser] = useState("");
+  // useEffect(() => {
+  //   Axios.post("/home/univ").then((response) => {
+  //     if (response.data) {
+  //       console.log(response.data);
+  //       setUser(response.data);
+  //     } else {
+  //       alert("failed to ");
+  //     }
+  //   });
+  // }, []);
   useEffect(() => {
-    Axios.post("/home/univ").then((response) => {
-      if (response.data) {
-        console.log(response.data);
-        setUser(response.data);
-      } else {
-        alert("failed to ");
-      }
-    });
+    const InitPostMethod = async () => {
+      await axios({
+        url: "/api/home/univ",
+        method: "POST",
+        baseURL:
+          "http://k8s-stage-game2049-bb9247bafa-590478206.ap-northeast-2.elb.amazonaws.com:8080",
+        withCredentials: true.valueOf,
+      })
+        .then(function callback(response) {
+          // Table data -> 서버에서 받은 데이터
+          setUser(response.data);
+        })
+        .catch(function CallbackERROR(response) {
+          console.log("fail");
+          alert("ERROR");
+        });
+    };
+    InitPostMethod();
   }, []);
 
   return (
